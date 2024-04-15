@@ -1,0 +1,79 @@
+\documentclass[a4paper,addpoints]{exam}
+
+\usepackage{amsfonts,amsmath,amsthm}
+\usepackage[a4paper]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{float}
+
+\header{CS/MATH 113}{WC15: Graphs}{Spring 2024}
+\footer{}{Page \thepage\ of \numpages}{}
+\runningheadrule
+\runningfootrule
+
+\printanswers
+
+\qformat{{\large\bf \thequestion. \thequestiontitle}\hfill(\totalpoints\ points)}
+\boxedpoints
+
+\title{Weekly Challenge 15: Graphs}
+\author{CS/MATH 113 Discrete Mathematics}
+\date{Spring 2024}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+\titledquestion{$n$-doku}
+  Let us define an $n$-doku as an $n\times n$ grid which contains all the numbers from $1$ to $n$ inclusive in the following manner.
+  \begin{itemize}
+  \item Each number appears exactly $n$ times in the grid.
+  \item Each number appears exactly once in each row of the grid.
+  \item Each number appears exactly once in each column of the grid.
+  \end{itemize}
+  For example here is a 4-doku.
+  
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|} \hline 
+      4&  3&  1& 2\\ \hline
+      3&  4&  2& 1\\ \hline 
+      2&  1&  4& 3\\ \hline 
+      1&  2&  3& 4\\ \hline 
+    \end{tabular}
+  \end{center}
+  
+  \begin{parts}
+  \part[2] Below is a partially completed 5-doku.
+    
+    \begin{center}
+      \begin{tabular}{|c|c|c|c|c|} \hline 
+        1&  2&  5&  3& 4\\ \hline 
+        3&  5&  2&  4& 1\\ \hline 
+        5&  1&  4&  2& 3\\ \hline 
+         &  &  &  & \\ \hline 
+         &  &  &  & \\ \hline
+      \end{tabular}
+    \end{center}
+    
+    Copy and complete the 5-doku.
+    \begin{solution}
+      % Enter your solution here.
+    \end{solution}
+    
+  \part[4] Show that filling in the next row of an $n$-doku is equivalent to finding a matching in some 2n-vertex bipartite graph.
+    \begin{solution}
+      % Enter your solution here.
+    \end{solution}
+    
+  \part[4] Prove that a matching must exist in this bipartite graph and, consequently, that an incomplete $n$-doku can always be completed.
+    \begin{solution}
+      % Enter your solution here.
+    \end{solution}
+  \end{parts}
+\end{questions}
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
