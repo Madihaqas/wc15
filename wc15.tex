@@ -54,17 +54,27 @@
     
     Copy and complete the 5-doku.
     \begin{solution}
-      % Enter your solution here.
+        
+    \begin{center}
+      \begin{tabular}{|c|c|c|c|c|} \hline 
+        1&  2&  5&  3& 4\\ \hline 
+        3&  5&  2&  4& 1\\ \hline 
+        5&  1&  4&  2& 3\\ \hline 
+         2& 4&  3& 1 & 5\\ \hline 
+         4&  3& 1 & 5 & 2\\ \hline
+      \end{tabular}
+    \end{center}
     \end{solution}
     
   \part[4] Show that filling in the next row of an $n$-doku is equivalent to finding a matching in some 2n-vertex bipartite graph.
     \begin{solution}
-      % Enter your solution here.
+      
+     To fill the next row in an n-doku puzzle, we treat the filled rows' values as one set and the values for the empty row as another set. This process involves checking whether a number is already present, resembling finding a matching in a bipartite graph. In both cases, uniqueness is key: in n-doku, no two values are the same within the set, much like how in a bipartite graph, each vertex within a set is unique and no two vertices share an edge.
     \end{solution}
     
   \part[4] Prove that a matching must exist in this bipartite graph and, consequently, that an incomplete $n$-doku can always be completed.
     \begin{solution}
-      % Enter your solution here.
+      For a matching to exist in a bipartite graph, there must be one no two same vertices in a set or no common edge between the vertices of one set. Uniqueness is the key and the same condition is necessary while filling an n-doku. The numbers cannot be repeated, so they are all distinct, and because the numbers are all unique, there will always be a way to fill the next box. 
     \end{solution}
   \end{parts}
 \end{questions}
